@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of n4lgames</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+<script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
+
+<div id="player-container" style="width: 100%; height: 100vh;"></div>
+
+<script>
+new spine.SpinePlayer("player-container", {
+	skeleton: "https://github.com/N4LGames/dhbm-shit/blob/main/luz_noceda.skel",
+	atlas: "https://github.com/N4LGames/dhbm-shit/blob/main/luz_noceda.atlas"
+});
+</script>
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+  </body>
+</html>
